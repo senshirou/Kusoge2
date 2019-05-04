@@ -37,9 +37,10 @@ public class PlayerStopper : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if(transform.position.y <= -50)
+		if(transform.position.y <= -100)
 		{
-			SceneManager.LoadScene("GamePlay");
+			var scene = SceneManager.GetActiveScene();
+			SceneManager.LoadScene(scene.name);
 
 		}
 

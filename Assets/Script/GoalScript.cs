@@ -8,13 +8,22 @@ public class GoalScript : MonoBehaviour {
 	
 	StageClear clear;
 
+	NextStage2 st2;
+
+	NextStage3 st3;
+
 	// Use this for initialization
 	void Start () {
 
+		goal = GetComponent<ParticleSystem>();
+
 		var sclear = GameObject.Find("Stage Clear");
 		clear = sclear.GetComponent<StageClear>();
+		var st2gbj = GameObject.Find("NextButton");
+		st2 = st2gbj.GetComponent<NextStage2>();
+		
 
-		goal = GetComponent<ParticleSystem>();
+		
 		
 		
 		
@@ -31,6 +40,11 @@ public class GoalScript : MonoBehaviour {
 		{
 			goal.Play();
 			clear.Stagetrue();
+			st2.ButtonTrue();
+			
+			
 		}
+
+		Destroy(gameObject,1.1f);
 	}
 }
