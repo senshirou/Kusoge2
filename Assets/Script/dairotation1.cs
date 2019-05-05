@@ -49,6 +49,6 @@ public class dairotation1 : MonoBehaviour {
 	{
 		//dairotation1のスクリプトを停止。
 		GetComponent<dairotation1>().enabled = false;
-		Debug.Log("get");
+		
 	}
 }

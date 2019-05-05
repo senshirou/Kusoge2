@@ -1,37 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class StageClear : MonoBehaviour {
 
-	Text ClearText;
+public class BackTitle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-		
-
-		ClearText = GetComponent<Text>();
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
-		
-
-		
 		
 	}
 
-	public void Stagetrue()
+	public void Title()
 	{
-		ClearText.enabled = true;
-		
-		
+		SceneManager.LoadScene("TITLE");
 	}
-
-	
-	
 }

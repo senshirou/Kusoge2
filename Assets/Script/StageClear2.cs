@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class StageClear : MonoBehaviour {
+public class StageClear2 : MonoBehaviour {
 
 	Text ClearText;
 
