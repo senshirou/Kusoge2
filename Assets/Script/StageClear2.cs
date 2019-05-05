@@ -28,8 +28,15 @@ public class StageClear2 : MonoBehaviour {
 	public void Stagetrue()
 	{
 		ClearText.enabled = true;
+		Invoke("Titletoback",5f);
 		
 		
+	}
+
+	public void Titletoback()
+	{
+		SceneManager.LoadScene("TITLE");
+
 	}
 
 	

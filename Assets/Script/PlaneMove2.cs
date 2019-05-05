@@ -41,7 +41,7 @@ public class PlaneMove2 : MonoBehaviour {
 			time = 0;
 		}
 
-		Debug.Log(time);
+		
 
 		
 		
